@@ -16,7 +16,7 @@ const messageEl = document.querySelector('#message')
 
 
 /*-------------------------------- Functions --------------------------------*/
-
+init()
 
 function init() {
   board = [
@@ -33,5 +33,16 @@ function init() {
 }
 
 function render() {
-  
+  board.forEach((space, idx) => {
+    spaceEls[idx].innerText = space;
+    if (space === null) {
+      spaceEls[idx].innerText = ''
+    }
+    if (space === 1) {
+      spaceEls[idx].innerText = '😎'
+    }
+    if (space === -1) {
+      spaceEls[idx].innerText = '🤓'
+    }
+  })
 }
