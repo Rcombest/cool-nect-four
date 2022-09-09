@@ -13,7 +13,9 @@ const messageEl = document.querySelector('#message')
 
 /*----------------------------- Event Listeners -----------------------------*/
 
-
+spaceEls.forEach((space) => {
+  space.addEventListener('click', handleClick)
+})
 
 /*-------------------------------- Functions --------------------------------*/
 init()
