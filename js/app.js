@@ -87,7 +87,23 @@ function render() {
 
 function handleClick(evt) {
   let spIdx = parseInt(evt.target.id.replace('sp', ''))
+  if (board[spIdx] || winner) {
+    return
+  }
   board[spIdx] = turn
   turn *= -1
+  winner = getWinner()
   render()
+}
+
+function getWinner() {
+  for (let i = 0; i < winningCombos.length; i++) {
+    if (Math.abs(board[winningCombos[i][0]] + board[winningCombos[i][1]] + board[winningCombos[i][2]]) === 3) 
+    return board[winningCombos[i][0]]
+  }
+  if (board.includes(null)) {
+    return null
+  } else {
+    return 'T'
+  }
 }
