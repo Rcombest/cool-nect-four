@@ -48,3 +48,10 @@ function render() {
     }
   })
 }
+
+function handleClick(evt) {
+  let spIdx = parseInt(evt.target.id.replace('sp', ''))
+  board[spIdx] = turn
+  turn *= -1
+  render()
+}
