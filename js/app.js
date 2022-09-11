@@ -83,6 +83,13 @@ function render() {
       spaceEls[idx].innerText = '🤓'
     }
   })
+  if (!winner) {
+    messageEl.innerText = `It's ${turn === 1 ? "😎" : "🤓"}'s turn!`
+  } else if (winner === 'T') {
+    messageEl.innerText = `Tie!`
+  } else {
+    messageEl.innerText = `${winner === 1 ? "😎" : "🤓"} wins!!!`
+  }
 }
 
 function handleClick(evt) {
