@@ -46,13 +46,14 @@ let board, turn, winner
 
 const spaceEls = document.querySelectorAll('section > div')
 const messageEl = document.querySelector('#message')
+const resetBtnEl = document.querySelector('#reset-btn')
 
 /*----------------------------- Event Listeners -----------------------------*/
 
 spaceEls.forEach((space) => {
   space.addEventListener('click', handleClick)
 })
-
+resetBtnEl.addEventListener('click', init)
 /*-------------------------------- Functions --------------------------------*/
 init()
 
