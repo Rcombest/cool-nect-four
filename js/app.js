@@ -95,13 +95,27 @@ function render() {
 
 function handleClick(evt) {
   let spIdx = parseInt(evt.target.id.replace('sp', ''))
+  console.log('idx that was clicked', spIdx)
   if (board[spIdx] || winner) {
     return
   }
-  board[spIdx] = turn
+  const corrIdx = handlePlacement(spIdx)
+  console.log(corrIdx)
+  board[corrIdx] = turn
   turn *= -1
   winner = getWinner()
   render()
+}
+
+function handlePlacement(spIdx) {
+  //determines a tokens placement
+  //accepts spIdx as input
+  //output should be finding the next available idx
+  console.log('bottom space', spIdx + 35)
+  let opnPos = spIdx + 35
+  //additional logic for determining open pos here
+  //check positions of board in multiples of 7 (for loop)
+  return opnPos
 }
 
 function getWinner() {
