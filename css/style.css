@@ -41,6 +41,15 @@ body.dark {
 --light-dark-btn-content: "Light Mode";
 }
 
+#reset-btn {
+  margin: 5px;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  
+  
+}
+
 .btn {
   border: none;
   color: var(--btn-text-color);
