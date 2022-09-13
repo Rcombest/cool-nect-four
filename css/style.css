@@ -79,7 +79,7 @@ section.board {
 }
 
 div {
-  border: 3px solid black;
+  border: 3px solid rgb(134, 53, 53);
   font-size: 8vmin;
   text-align: center;
   vertical-align: middle;
