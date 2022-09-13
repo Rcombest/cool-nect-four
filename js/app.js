@@ -61,6 +61,7 @@ resetBtnEl.addEventListener('click', init)
 lightDarkBtn.addEventListener('click', toggleLightDark)
 
 
+
 /*-------------------------------- Functions --------------------------------*/
 init()
 
@@ -156,12 +157,8 @@ function toggleLightDark() {
   body.className = body.className === 'dark' ? '' : 'dark'
 }
 
-function checkDarkPref() {
-  if (
-    window.matchMedia('(prefers-color-scheme:dark)').matches && body.className !== 'dark'
-  ) {
-    toggleLightDark()
-  }
-}
 
-checkDarkPref()
+function play() {
+  let audio = document.getElementById('audio')
+  audio.play()
+}

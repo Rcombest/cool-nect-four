@@ -32,7 +32,7 @@ body {
 }
 
 body.dark {
-  background-image: url(https://a.pinatafarm.com/612x521/f9813cb32a/badass-skeleton.jpg);
+  background: url(https://a.pinatafarm.com/612x521/f9813cb32a/badass-skeleton.jpg);
   --btn-text-color: #eaeaea;
   --inverted-btn-text-color: #eaeaea;
   background-color: var(--body-bg);

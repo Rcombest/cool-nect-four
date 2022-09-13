@@ -2,4 +2,4 @@
 
 Built using JavaScript, CSS, and HTML
 
-dark mode background credit to: https://a.pinatafarm.com/612x521/f9813cb32a/badass-skeleton.jpg
+dark mode background image credit to: https://a.pinatafarm.com/612x521/f9813cb32a/badass-skeleton.jpg
