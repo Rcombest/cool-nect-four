@@ -47,6 +47,9 @@ let board, turn, winner
 const spaceEls = document.querySelectorAll('section > div')
 const messageEl = document.querySelector('#message')
 const resetBtnEl = document.querySelector('#reset-btn')
+const lightDarkBtn = document.querySelector('#light-dark-btn')
+const body = document.querySelector('body')
+
 
 /*----------------------------- Event Listeners -----------------------------*/
 
@@ -54,6 +57,10 @@ spaceEls.forEach((space) => {
   space.addEventListener('click', handleClick)
 })
 resetBtnEl.addEventListener('click', init)
+
+lightDarkBtn.addEventListener('click', toggleLightDark)
+
+
 /*-------------------------------- Functions --------------------------------*/
 init()
 
@@ -128,7 +135,6 @@ function handlePlacement(spIdx) {
   if (board[opnPos] !== null) {
     opnPos = (spIdx)
   }
-  //for (let i = 0; i < board.length; i++)
   //additional logic for determining open pos here
   //check positions of board in multiples of 7 (for loop)
   return opnPos
@@ -145,3 +151,17 @@ function getWinner() {
     return 'T'
   }
 }
+
+function toggleLightDark() {
+  body.className = body.className === 'dark' ? '' : 'dark'
+}
+
+function checkDarkPref() {
+  if (
+    window.matchMedia('(prefers-color-scheme:dark)').matches && body.className !== 'dark'
+  ) {
+    toggleLightDark()
+  }
+}
+
+checkDarkPref()
