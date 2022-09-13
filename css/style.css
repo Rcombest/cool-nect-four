@@ -14,7 +14,7 @@ html {
 body {
   --body-bg: gray;
   background-color: var(--body-bg);
-  --btn-text-color: #2a2a2a;
+  /* --btn-text-color: #2a2a2a; */
   --inverted-btn-text-color: #eaeaea;
   --light-dark-btn-bg: #1d1e2b;
   --light-dark-btn-content: "Dark Mode";
@@ -29,6 +29,16 @@ body {
   color: antiquewhite;
   align-items: center;
 
+}
+
+body.dark {
+  --body-bg: #22232b;
+  --btn-text-color: #eaeaea;
+  --inverted-btn-text-color: #eaeaea;
+  background-color: var(--body-bg);
+  --light-dark-btn-bg: linear-gradient(to right top, #444655, #595b6b, #6f7181,
+  #868898, #9ea0b0, #acaebe, #bbbccd, #cacbdc, #d2d4e5, #dadced, #e3e5f6, #ebeeff);
+--light-dark-btn-content: "Light Mode";
 }
 
 .btn {
