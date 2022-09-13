@@ -32,13 +32,16 @@ body {
 }
 
 body.dark {
-  --body-bg: #22232b;
+  background-image: url(https://a.pinatafarm.com/612x521/f9813cb32a/badass-skeleton.jpg);
   --btn-text-color: #eaeaea;
   --inverted-btn-text-color: #eaeaea;
   background-color: var(--body-bg);
   --light-dark-btn-bg: linear-gradient(to right top, #444655, #595b6b, #6f7181,
   #868898, #9ea0b0, #acaebe, #bbbccd, #cacbdc, #d2d4e5, #dadced, #e3e5f6, #ebeeff);
 --light-dark-btn-content: "Light Mode";
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
 }
 
 #reset-btn {
@@ -46,7 +49,6 @@ body.dark {
   border: none;
   font-size: 20px;
   font-weight: 500;
-  
   
 }
 
