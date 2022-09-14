@@ -160,5 +160,6 @@ function toggleLightDark() {
 
 function play() {
   let audio = document.getElementById('audio')
+  audio.volume = .03
   audio.play()
 }

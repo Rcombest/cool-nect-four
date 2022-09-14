@@ -2,4 +2,6 @@
 
 Built using JavaScript, CSS, and HTML
 
+audio credited to and owned by: Slipknot and Roadrunner Records
+
 dark mode background image credit to: https://a.pinatafarm.com/612x521/f9813cb32a/badass-skeleton.jpg
