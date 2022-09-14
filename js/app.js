@@ -163,3 +163,9 @@ function play() {
   audio.volume = .03
   audio.play()
 }
+
+function pause() {
+  let audio = document.getElementById('audio')
+  audio.pause()
+  audio.currentTime = 0;
+}
