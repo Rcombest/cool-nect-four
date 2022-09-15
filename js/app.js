@@ -49,6 +49,7 @@ const messageEl = document.querySelector('#message')
 const resetBtnEl = document.querySelector('#reset-btn')
 const lightDarkBtn = document.querySelector('#light-dark-btn')
 const body = document.querySelector('body')
+const titleEl = document.querySelector('#title')
 
 
 /*----------------------------- Event Listeners -----------------------------*/
@@ -66,6 +67,7 @@ lightDarkBtn.addEventListener('click', toggleLightDark)
 init()
 
 function init() {
+  titleEl.className = "";
   board = [
     null, null, null, null, null, null, null,
     null, null, null, null, null, null, null,
@@ -80,6 +82,7 @@ function init() {
 }
 
 function render() {
+  titleEl.className = "animate__animated animate__lightSpeedInLeft"
   board.forEach((space, idx) => {
     spaceEls[idx].innerText = space;
     if (space === null) {
