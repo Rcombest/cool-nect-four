@@ -11,8 +11,8 @@ html {
 body {
   --body-bg: #2D2D34;
   background-color: var(--body-bg);
-  --btn-text-color: #eaeaea;
-  --inverted-btn-text-color: #eaeaea;
+  --btn-text-color: antiquewhite;
+  --inverted-btn-text-color: antiquewhite;
   --light-dark-btn-bg: #1d1e2b;
   --light-dark-btn-content: "Dark Mode";
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -29,8 +29,8 @@ body {
 
 body.dark {
   background: url("../assets/badass-skeleton.jpg");
-  --btn-text-color: #eaeaea;
-  --inverted-btn-text-color: #eaeaea;
+  --btn-text-color: antiquewhite;
+  --inverted-btn-text-color: antiquewhite;
   background-color: var(--body-bg);
   --light-dark-btn-bg: linear-gradient(to right top, #444655, #595b6b, #6f7181,
   #868898, #9ea0b0, #acaebe, #bbbccd, #cacbdc, #d2d4e5, #dadced, #e3e5f6, #ebeeff);
@@ -56,7 +56,7 @@ h1 {
   color: var(--btn-text-color);
   font-size: 20px;
   font-weight: 500;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 #light-dark-btn {
