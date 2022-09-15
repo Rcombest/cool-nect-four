@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  --body-bg: gray;
+  --body-bg: #2D2D34;
   background-color: var(--body-bg);
   --btn-text-color: #eaeaea;
   --inverted-btn-text-color: #eaeaea;
