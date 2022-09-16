@@ -1,7 +1,7 @@
 # Cool-Nect Four 😎: The Cool Guys Connect Four
 
 
-> Built using JavaScript, CSS, and HTML, this connect four game gives you a nice quick game with a fun twist when dark mode is activated. Play as Cool Guy or The Nerd and stack your way to victory, you legend.
+> Built using JavaScript, CSS, HTML, and Bootstrap, this connect four game gives you a nice quick game with a fun twist when dark mode is activated. Play as Cool Guy or The Nerd and stack your way to victory, you legend.
 
 
 Future enhancements: 
